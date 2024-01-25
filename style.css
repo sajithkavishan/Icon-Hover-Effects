@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: rgb(59, 59, 59);
+}
+
+.container {
+    color: white;
+}
+
+.hover-icon-1, .hover-icon-2, .hover-icon-3, .hover-icon-4 {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    display: inline-block;
+    margin: 15px;
+    line-height: 84px;
+    border-radius: 50%;
+    background-color: rgb(105, 105, 105);
+    text-align: center;
+    position: relative;
+    transition: 300ms;
+}
+
+.hover-icon-1 {
+    background-color: rgb(3, 73, 223);
+}
+
+.hover-icon-2 {
+    background-color: blueviolet;
+}
+
+.hover-icon-3 {
+    background-color: rgb(6, 168, 255);
+}
+
+.hover-icon-4 {
+    background-color: rgb(237, 26, 174);
+}
+
+
+.hover-icon-1::after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+    box-shadow: 0 0 0 3px rgb(3, 73, 223);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.hover-icon-1:hover::after {
+    opacity: 1;
+    transform: scale(1.15);
+    box-shadow: 0 0 0 3px rgb(3, 73, 223),
+                0 0 50px rgb(3, 73, 223),
+                0 0 100px rgb(3, 73, 223);
+}
+
+.hover-icon-2::after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+    box-shadow: 0 0 0 3px blueviolet;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.hover-icon-2:hover::after {
+    opacity: 1;
+    transform: scale(1.15);
+    box-shadow: 0 0 0 3px blueviolet,
+                0 0 50px blueviolet,
+                0 0 100px blueviolet;
+}
+
+.hover-icon-3::after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+    box-shadow: 0 0 0 3px rgb(6, 168, 255);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.hover-icon-3:hover::after {
+    opacity: 1;
+    transform: scale(1.15);
+    box-shadow: 0 0 0 3px rgb(6, 168, 255),
+                0 0 50px rgb(6, 168, 255),
+                0 0 100px rgb(6, 168, 255);
+}
+
+.hover-icon-4::after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+    box-shadow: 0 0 0 3px rgb(237, 26, 174);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.hover-icon-4:hover::after {
+    opacity: 1;
+    transform: scale(1.15);
+    box-shadow: 0 0 0 3px rgb(237, 26, 174),
+                0 0 50px rgb(237, 26, 174),
+                0 0 100px  rgb(237, 26, 174);
+}
+
