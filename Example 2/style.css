@@ -23,17 +23,86 @@ body {
     display: inline-block;
     height: 60px;
     width: 60px;
-    float: left;
     margin: 0 10px;
     background: rgb(108, 108, 108);
     border-radius: 50px;
     box-shadow: 0 10px 10px rgb(58, 58, 58, 0.2);
     cursor: pointer;
     overflow: hidden;
+    float: left;
+    transition: all 0.3s ease-out;
+}
+
+.button:hover {
+    width: 200px;
+    background-color: white;
+    border-radius: 0 50px 0 50px;
 }
 
 .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
     line-height: 60px;
+    box-sizing: border-box;
     text-align: center;
     font-size: 25px;
+    transition: all 0.3s ease-out;
+}
+
+.button:nth-child(1):hover .icon {
+    background-color: rgb(40, 155, 248);
+    transition: all 0.3s ease-out;
+    border-radius: 0 50px 0 50px;
+    width: 70px;
+}
+
+.button:nth-child(2):hover .icon {
+    background-color: rgb(0, 130, 236);
+    transition: all 0.3s ease-out;
+    border-radius: 0 50px 0 50px;
+    width: 70px;
+}
+
+.button:nth-child(3):hover .icon {
+    background-color: rgb(165, 3, 198);
+    transition: all 0.3s ease-out;
+    border-radius: 0 50px 0 50px;
+    width: 70px;
+}
+
+.button:nth-child(4):hover .icon {
+    background-color: rgb(229, 5, 192);
+    transition: all 0.3s ease-out;
+    border-radius: 0 50px 0 50px;
+    width: 70px;
+}
+
+span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.button:nth-child(1):hover span {
+    color: rgb(40, 155, 248);
+    transition: all 0.3s ease-out;
+}
+
+.button:nth-child(2):hover span {
+    color: rgb(0, 130, 236);
+    transition: all 0.3s ease-out;
+}
+
+.button:nth-child(3):hover span {
+    color: rgb(165, 3, 198);
+    transition: all 0.3s ease-out;
+}
+
+.button:nth-child(4):hover span {
+    color:  rgb(229, 5, 192);
+    transition: all 0.3s ease-out;
 }
