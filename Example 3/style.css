@@ -2,3 +2,21 @@
     margin: 0;
     padding: 0;
 }
+
+.container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin: 0 10px;
+    background: #f1f1f1;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px -5px rgb(189, 189, 189);
+}
