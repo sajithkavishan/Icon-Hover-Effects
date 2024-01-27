@@ -19,4 +19,25 @@
     background: #f1f1f1;
     border-radius: 20px;
     box-shadow: 0 5px 15px -5px rgb(189, 189, 189);
+    color: rgb(0, 149, 255);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear;
+
+}
+
+.button i {
+    line-height: 90px;
+    font-size: 26px;
+    transition: all 0.2s linear;
+}
+
+.button:hover i {
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+
+.button:hover {
+    background: rgb(0, 149, 255);
+    transition: all 0.3s linear;
 }
