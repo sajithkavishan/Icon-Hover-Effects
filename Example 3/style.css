@@ -22,14 +22,12 @@
     color: rgb(0, 149, 255);
     position: relative;
     overflow: hidden;
-    transition: all 0.3s linear;
-
 }
 
 .button i {
     line-height: 90px;
     font-size: 26px;
-    transition: all 0.2s linear;
+    transition: 0.2s linear;
 }
 
 .button:hover i {
@@ -37,7 +35,35 @@
     color: #f1f1f1;
 }
 
-.button:hover {
+
+.button::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
     background: rgb(0, 149, 255);
-    transition: all 0.3s linear;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.button:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa {
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+    100% {
+        top: -10%;
+        left: -10%;
+    }
 }
