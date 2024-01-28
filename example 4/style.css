@@ -4,7 +4,28 @@
 }
 
 .container {
-    display: inline-block;
+    position: absolute;
     top: 50%;
     width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+
+}
+
+.button {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: rgb(241, 241, 241);
+    margin: 0 10px;
+    color: rgb(0, 166, 255);
+    box-shadow: 0 5px 15px -5px rgb(189, 189, 189);
+    position: relative;
+}
+
+.button i {
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.2s linear;
 }
